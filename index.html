@@ -50,9 +50,17 @@ h1 {
 <body>
 
 <!-- MUSIC -->
-<audio autoplay loop>
+<button onclick="playMusic()" class="button">Play our song 🎶</button>
+
+<audio id="music">
   <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mp3">
 </audio>
+
+<script>
+function playMusic() {
+  document.getElementById("music").play();
+}
+</script>
 
 <div class="section">
     <h1>Happy Birthday, Vijay ❤️</h1>
