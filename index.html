@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Vijay ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+    color: #333;
+    text-align: center;
+}
+
+.section {
+    padding: 60px 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.button {
+    padding: 12px 25px;
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+</style>
+</head>
+
+<body>
+
+<!-- MUSIC -->
+<audio autoplay loop>
+  <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mp3">
+</audio>
+
+<div class="section">
+    <h1>Happy Birthday, Vijay ❤️</h1>
+    <p>Oyyyeee Shekhawat… don’t rush this. This one’s yours.</p>
+    <button class="button" onclick="showSurprise()">Click here, stupid 💌</button>
+</div>
+
+<div id="surprise" class="hidden">
+
+    <div class="section">
+        <h2>When daisies met dandelions 🌼</h2>
+        <p>
+        I didn’t plan you.<br>
+        You just… happened.<br><br>
+        And suddenly, life felt softer, warmer… better.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Our little story</h2>
+
+        <div class="card">
+            <h3>November</h3>
+            <p>The start… where everything was uncertain but somehow felt right.</p>
+        </div>
+
+        <div class="card">
+            <h3>January</h3>
+            <p>We grew closer… not just talking, but understanding.</p>
+        </div>
+
+        <div class="card">
+            <h3>March</h3>
+            <p>No plans, no dates… still, you felt like home.</p>
+        </div>
+
+        <div class="card">
+            <h3>April</h3>
+            <p>I realized… I’m not leaving. Not you.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>For you</h2>
+        <div class="card">
+            <p>
+            Oyyyeee Shekhawat,<br><br>
+
+            You annoy me, confuse me, and still somehow become the one I want the most.<br><br>
+
+            You’re in my random thoughts, my mood swings, my smiles… everything.<br><br>
+
+            I don’t say it perfectly, but I feel it deeply.<br><br>
+
+            And if life gives me choices again…<br>
+            I’d still choose you.<br><br>
+
+            Always.
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Before you go…</h2>
+        <button class="button" onclick="finalMessage()">One last thing</button>
+    </div>
+
+    <div id="final" class="hidden section">
+        <h2>Turn around ❤️</h2>
+        <p>Or check your phone… maybe your girl planned something more 😌</p>
+    </div>
+
+</div>
+
+<script>
+function showSurprise() {
+    document.getElementById("surprise").classList.remove("hidden");
+}
+
+function finalMessage() {
+    document.getElementById("final").classList.remove("hidden");
+}
+</script>
+
+</body>
+      </html>
