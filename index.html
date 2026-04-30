@@ -3,23 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday Vijay ❤️</title>
+<title>Happy Birthday ❤️</title>
 
 <style>
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
-    color: #333;
     text-align: center;
+    color: #333;
 }
 
 .section {
     padding: 60px 20px;
-}
-
-h1 {
-    font-size: 2.5em;
 }
 
 .button {
@@ -30,10 +26,6 @@ h1 {
     border-radius: 25px;
     cursor: pointer;
     font-size: 16px;
-}
-
-.hidden {
-    display: none;
 }
 
 .card {
@@ -47,125 +39,99 @@ h1 {
 </style>
 </head>
 
-    
 <body>
 
-<!-- MUSIC -->
-
-</script>
-
-    
+<!-- FIRST SCREEN -->
 <div class="section">
     <h1>Happy Birthday, Vijay ❤️</h1>
-    <p>Oyyyeee Shekhawat… don’t rush this. This one’s yours.</p>
-    <button class="button" onclick="showSurprise()">Click here, stupid 💌</button>
+    <p>Oyyyeee Shekhawat… don’t rush this.</p>
+    <button class="button" onclick="showSurprise()">Click here 💌</button>
 </div>
 
-<div id="surprise" class="hidden">
+<!-- MAIN CONTENT (hidden) -->
+<div id="surprise" style="display:none;">
 
+    <!-- STORY -->
     <div class="section">
         <h2>When daisies met dandelions 🌼</h2>
         <p>
-        I didn’t plan you.<br>
-        You just… happened.<br><br>
-        And suddenly, life felt softer, warmer… better.
+        You just happened…<br>
+        and suddenly everything felt better.
         </p>
     </div>
 
+    <!-- TIMELINE -->
     <div class="section">
         <h2>Our little story</h2>
 
         <div class="card">
             <h3>November</h3>
-            <p>The start… where everything was uncertain but somehow felt right.</p>
+            <p>The beginning… soft and unexpected.</p>
         </div>
 
         <div class="card">
             <h3>January</h3>
-            <p>We grew closer… not just talking, but understanding.</p>
+            <p>We got closer… more real, more us.</p>
         </div>
 
         <div class="card">
             <h3>March</h3>
-            <p>No plans, no dates… still, you felt like home.</p>
+            <p>No plans, still you felt like home.</p>
         </div>
 
         <div class="card">
             <h3>April</h3>
-            <p>I realized… I’m not leaving. Not you.</p>
+            <p>I knew… I’m not leaving you.</p>
         </div>
     </div>
-<div class="section">
-    <p>Tap the flower 🌼</p>
-    
-    <h1 onclick="showFlowerMessage()" style="cursor:pointer; font-size:50px;">
-        🌼
-    </h1>
-</div>
 
-<div id="flowerMessage" style="display:none;" class="section">
-    <p>
-        Oyyyeee Shekhawat…<br><br>
-        You tapped this, so now you’re stuck reading this 😏<br><br>
-        I like you. A lot more than I admit.<br>
-        And maybe… a little more than I should.<br><br>
-        Happy Birthday, my love ❤️
-    </p>
-</div>
-
-<script>
-function showFlowerMessage() {
-    document.getElementById("flowerMessage").style.display = "block";
-}
-</script>
+    <!-- FLOWER TAP -->
     <div class="section">
-        <h2>For you</h2>
-        <div class="card">
-            <p>
-            Oyyyeee Shekhawat,<br><br>
-
-            You annoy me, confuse me, and still somehow become the one I want the most.<br><br>
-
-            You’re in my random thoughts, my mood swings, my smiles… everything.<br><br>
-
-            I don’t say it perfectly, but I feel it deeply.<br><br>
-
-            And if life gives me choices again…<br>
-            I’d still choose you.<br><br>
-
-            Always.
-            </p>
-        </div>
+        <p>Tap the flower 🌼</p>
+        <h1 onclick="showFlowerMessage()" style="cursor:pointer; font-size:50px;">
+            🌼
+        </h1>
     </div>
 
+    <!-- FLOWER MESSAGE (hidden) -->
+    <div id="flowerMessage" style="display:none;" class="section">
+        <p>
+            Oyyyeee Shekhawat…<br><br>
+            you’re actually very lucky you know? 😏<br><br>
+            Not everyone gets someone like me 😉<br><br>
+            But don’t worry,<br>
+            I’m not going anywhere.
+        </p>
+    </div>
+
+    <!-- ENDING -->
     <div class="section">
         <h2>Before you go…</h2>
-        <button class="button" onclick="finalMessage()">One last thing</button>
     </div>
 
-    <div id="final" class="hidden section">
-        <h2>Turn around ❤️</h2>
-        <p>Or check your phone… maybe your girl planned something more 😌</p>
+    <!-- FINAL MESSAGE -->
+    <div class="section">
+        <p>
+            Once again, Happy Birthday, my love ❤️<br><br>
+            You’re my favorite person,<br>
+            my favorite notification,<br>
+            and honestly… my favorite problem too 😌<br><br>
+            So yeah,<br>
+            stay mine.
+        </p>
     </div>
 
 </div>
 
 <script>
 function showSurprise() {
-    document.getElementById("surprise").classList.remove("hidden");
+    document.getElementById("surprise").style.display = "block";
 }
 
-function finalMessage() {
-    document.getElementById("final").classList.remove("hidden");
+function showFlowerMessage() {
+    document.getElementById("flowerMessage").style.display = "block";
 }
 </script>
 
 </body>
-      </html>
-
-
-<p>
-    Once again, Happy Birthday, my love ❤️<br><br>
-    I don’t say it enough, but you mean everything to me.<br>
-    And I’m so lucky it’s you.
-</p>
+</html>
