@@ -51,16 +51,7 @@ h1 {
 <body>
 
 <!-- MUSIC -->
-<button onclick="playMusic()" class="button">Play our song 🎶</button>
 
-<audio id="music">
-  <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mp3">
-</audio>
-
-<script>
-function playMusic() {
-  document.getElementById("music").play();
-}
 </script>
 
     
@@ -104,7 +95,29 @@ function playMusic() {
             <p>I realized… I’m not leaving. Not you.</p>
         </div>
     </div>
+<div class="section">
+    <p>Tap the flower 🌼</p>
+    
+    <h1 onclick="showFlowerMessage()" style="cursor:pointer; font-size:50px;">
+        🌼
+    </h1>
+</div>
 
+<div id="flowerMessage" style="display:none;" class="section">
+    <p>
+        Oyyyeee Shekhawat…<br><br>
+        You tapped this, so now you’re stuck reading this 😏<br><br>
+        I like you. A lot more than I admit.<br>
+        And maybe… a little more than I should.<br><br>
+        Happy Birthday, my love ❤️
+    </p>
+</div>
+
+<script>
+function showFlowerMessage() {
+    document.getElementById("flowerMessage").style.display = "block";
+}
+</script>
     <div class="section">
         <h2>For you</h2>
         <div class="card">
